@@ -1,0 +1,35 @@
+Django Commands
+
+alias python='python3.9'
+django-admin startproject  firstApp (Directory. For apps)
+django-admin startapp appname
+python manage.py migrate
+python manage.py runserver
+python manage.py syncdb
+
+After you created the migrations you have to apply them: migrate.
+So instead of using syncdb you should use makemigrations and then migrate.
+Workflow on development after you changed something in your models:
+./manage.py makemigrations
+./manage.py migrate
+And on your production system:
+./manage.py migrate
+
+create superuser in Django
+python manage.py createsuperuser
+
+samuelampofo
+appMaker2022!
+
+
+python manage.py makemigrations
+
+delete a django project
+rm -r projectfoldername
+
+#this provide you with the eshell enviromenet of Django
+python  manage.py shell
+
+
+ a list of all pakage avaliable
+ pip requirements.txt
