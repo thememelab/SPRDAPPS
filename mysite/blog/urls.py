@@ -9,5 +9,5 @@ urlpatterns = [
     path('posts/',post_list),
     path('posts/(?P<pk>[0-9]+)/',post_detail),
     path('posts/(?P<pk>[0-9]+)/comment/',post_comment),
-    path('posts/(?P<pk>[0-9]+)/comment/add_comment',add_comment),
+    path('posts/(?P<pk>[0-9]+)/comment/add_comment',add_comment)
 ]
